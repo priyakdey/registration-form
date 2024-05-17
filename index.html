@@ -14,18 +14,52 @@
 	<body>
 		<div class="container">
 			<div class="registration-form-container">
-				<p id="registration-form-step-1-header">Register</p>
-				<p id="registration-form-step-2-header" class="display-none">
+				<p id="registration-form-step-1-header" class="display-none">
+					Register
+				</p>
+				<p id="registration-form-step-2-header">
 					Which topics you are interested in?
 				</p>
 				<form class="registration-form">
-					<div class="input-container">
+					<div
+						id="registration-form-input-name"
+						class="input-container display-none"
+					>
 						<label for="name" class="input-field-label">Name</label>
 						<input id="name" type="text" placeholder="enter your name" />
 					</div>
-					<div class="input-container">
+					<div
+						id="registration-form-input-name"
+						class="input-container display-none"
+					>
 						<label for="email" class="input-field-label">Email</label>
 						<input id="email" type="email" placeholder="example@gmail.com" />
+					</div>
+					<div id="registration-form-input-topic" class="input-container">
+						<label
+							id="software-development"
+							class="input-field-topic"
+							for="software-development"
+						>
+							Software Development
+						</label>
+						<input name="software-development" type="radio" />
+						<label
+							id="user-experience"
+							class="input-field-topic"
+							for="user-experience"
+						>
+							User Experience
+						</label>
+						<input name="user-experience" type="radio" />
+						<label
+							id="graphic-design"
+							class="input-field-topic"
+							for="graphic-design"
+						>
+							Graphic Design
+						</label>
+						<input name="graphic-design" type="radio" />
 					</div>
 				</form>
 				<button id="continue" type="button" class="btn">Continue</button>

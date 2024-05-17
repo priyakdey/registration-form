@@ -99,7 +99,7 @@ body {
 	width: 100%;
 	background-color: var(--gray-deep);
 	border: 2px solid var(--gray);
-	border-radius: 5px;
+	border-radius: 10px;
 	padding: 20px 10px;
 }
 
@@ -113,6 +113,24 @@ body {
 .input-container input[type="email"]::placeholder {
 	font-size: 12px;
 	font-weight: 500;
+}
+
+.input-container input[type="radio"] {
+	display: none;
+}
+
+.input-field-topic {
+	height: 50px;
+	width: 100%;
+	background-color: var(--gray-mid);
+	display: flex;
+	align-items: center;
+	padding: 20px 10px;
+	border: 2px solid var(--gray);
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 300;
+	color: var(--gray-light);
 }
 
 .btn {
