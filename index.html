@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Multi-step registration form build using html, css and javascript."
+		/>
+		<meta name="keywords" content="html, css, javascript" />
+		<title>Registration Form</title>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="registration-form-container">
+				<p>Register</p>
+				<form class="registration-form">
+					<div class="input-container">
+						<label for="name">Name</label>
+						<input id="name" type="text" placeholder="enter your name" />
+					</div>
+					<div class="input-container">
+						<label for="email">Email</label>
+						<input id="email" type="email" placeholder="example@gmail.com" />
+					</div>
+				</form>
+				<button id="continue" class="btn">Continue</button>
+			</div>
+			<div class="step-container">
+				<p id="step count">Step 1 of 3</p>
+				<ul id="step-indicator" class="step-indicator">
+					<li id="step-1" class="step done"></li>
+					<li id="step-2" class="step current"></li>
+					<li id="step-3" class="step"></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
