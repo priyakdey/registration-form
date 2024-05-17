@@ -87,7 +87,7 @@ body {
 	row-gap: 10px;
 }
 
-.input-container label {
+.input-field-label {
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--gray-light);
@@ -160,4 +160,8 @@ body {
 
 .step.done {
 	background-color: var(--purple-dark);
+}
+
+.display-none {
+	display: none;
 }

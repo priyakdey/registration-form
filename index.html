@@ -14,24 +14,27 @@
 	<body>
 		<div class="container">
 			<div class="registration-form-container">
-				<p>Register</p>
+				<p id="registration-form-step-1-header">Register</p>
+				<p id="registration-form-step-2-header" class="display-none">
+					Which topics you are interested in?
+				</p>
 				<form class="registration-form">
 					<div class="input-container">
-						<label for="name">Name</label>
+						<label for="name" class="input-field-label">Name</label>
 						<input id="name" type="text" placeholder="enter your name" />
 					</div>
 					<div class="input-container">
-						<label for="email">Email</label>
+						<label for="email" class="input-field-label">Email</label>
 						<input id="email" type="email" placeholder="example@gmail.com" />
 					</div>
 				</form>
-				<button id="continue" class="btn">Continue</button>
+				<button id="continue" type="button" class="btn">Continue</button>
 			</div>
 			<div class="step-container">
 				<p id="step count">Step 1 of 3</p>
 				<ul id="step-indicator" class="step-indicator">
-					<li id="step-1" class="step done"></li>
-					<li id="step-2" class="step current"></li>
+					<li id="step-1" class="step current"></li>
+					<li id="step-2" class="step"></li>
 					<li id="step-3" class="step"></li>
 				</ul>
 			</div>
