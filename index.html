@@ -21,24 +21,26 @@
 					Which topics you are interested in?
 				</p>
 				<form class="registration-form">
-					<div
-						id="registration-form-input-name"
-						class="input-container display-none"
-					>
+					<!-- step 1: name -->
+					<div id="registration-form-input-name" class="input-container">
 						<label for="name" class="input-field-label">Name</label>
 						<input id="name" type="text" placeholder="enter your name" />
 					</div>
-					<div
-						id="registration-form-input-name"
-						class="input-container display-none"
-					>
+
+					<!-- step 1: email -->
+					<div id="registration-form-input-name" class="input-container">
 						<label for="email" class="input-field-label">Email</label>
 						<input id="email" type="email" placeholder="example@gmail.com" />
 					</div>
-					<div id="registration-form-input-topic" class="input-container">
+
+					<!-- step 2: topic 1 -->
+					<div
+						id="registration-form-input-topic"
+						class="input-container display-none"
+					>
 						<label
 							id="software-development"
-							class="input-field-topic"
+							class="input-field-topic selected"
 							for="software-development"
 						>
 							Software Development
@@ -61,8 +63,17 @@
 						</label>
 						<input name="graphic-design" type="radio" />
 					</div>
+
+					<!-- Step 1 & 2 : Continue -->
+					<div id="continue" class="input-container">
+						<input type="button" class="btn" value="Continue" />
+					</div>
+
+					<!-- Step 3 : Confirm -->
+					<div id="submit" class="input-container display-none">
+						<input id="confirm" type="submit" class="btn" value="Submit" />
+					</div>
 				</form>
-				<button id="continue" type="button" class="btn">Continue</button>
 			</div>
 			<div class="step-container">
 				<p id="step count">Step 1 of 3</p>

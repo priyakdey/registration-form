@@ -126,11 +126,17 @@ body {
 	display: flex;
 	align-items: center;
 	padding: 20px 10px;
-	border: 2px solid var(--gray);
+	border: 1px solid var(--gray);
 	border-radius: 10px;
 	font-size: 14px;
 	font-weight: 300;
 	color: var(--gray-light);
+}
+
+.selected {
+	background-color: var(--purple-dark);
+	color: var(--gray-ultra-light);
+	font-weight: 500;
 }
 
 .btn {
@@ -140,7 +146,8 @@ body {
 	height: 40px;
 	width: 150px;
 	border-radius: 50px;
-	margin-top: 40px;
+	margin-top: 30px;
+	font-size: 12px;
 }
 
 .step-container {
