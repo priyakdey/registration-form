@@ -1,6 +1,6 @@
 # Registration Form
 
-User Registration Form in pure HTML, CSS and Javascript.
+User Registration Form in pure HTML, CSS and JavaScript.
 
 ## Table of Contents
 
