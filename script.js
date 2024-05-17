@@ -38,6 +38,16 @@ function validateTopics(topics) {
 	return topics !== null && topics.size !== 0;
 }
 
+function capitalize(word) {
+	const arr = word.split("-");
+	let cursor = 0;
+	for (const item of arr) {
+		arr[cursor++] = item[0].toUpperCase() + item.substr(1);
+	}
+
+	return arr.join(" ");
+}
+
 // Event listeners
 
 document
@@ -94,6 +104,9 @@ document.getElementById("continue-btn").addEventListener("click", (e) => {
 			step1Element.classList.add("done");
 
 			document.getElementById("step-2").classList.add("current");
+			document.getElementById(
+				"step-count"
+			).textContent = `Step ${state.step} of 3`;
 			break;
 		case 2:
 			if (!validateTopics(state.topics)) {
@@ -108,8 +121,24 @@ document.getElementById("continue-btn").addEventListener("click", (e) => {
 				.getElementById("registration-form-step-2-header")
 				.classList.add("display-none");
 			document
+				.getElementById("registration-form-step-3-header")
+				.classList.remove("display-none");
+			document
 				.getElementById("registration-form-input-topic")
 				.classList.add("display-none");
+			document
+				.getElementById("registration-form-summary")
+				.classList.remove("display-none");
+			document.getElementById("summary-name").textContent = state.name;
+			document.getElementById("summary-email").textContent = state.email;
+
+			const ul = document.getElementById("topics-list");
+			state.topics.forEach((topic) => {
+				const li = document.createElement("li");
+				li.textContent = capitalize(topic);
+				ul.appendChild(li);
+			});
+
 			document.getElementById("continue").classList.add("display-none");
 			document.getElementById("confirm").classList.remove("display-none");
 
@@ -118,6 +147,9 @@ document.getElementById("continue-btn").addEventListener("click", (e) => {
 			step2Element.classList.add("done");
 
 			document.getElementById("step-3").classList.add("current");
+			document.getElementById(
+				"step-count"
+			).innerHTML = `Step ${state.step} of 3`;
 	}
 });
 
@@ -134,3 +166,5 @@ document.querySelectorAll(".input-field-topic").forEach((element) => {
 		}
 	});
 });
+
+document.getElementById("step-count").textContent = `Step ${state.step} of 3`;

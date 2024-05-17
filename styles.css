@@ -139,6 +139,37 @@ body {
 	font-weight: 500;
 }
 
+#registration-form-summary {
+	row-gap: 20px;
+}
+
+.credentials {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+.credentials div {
+	display: flex;
+	flex-direction: row;
+	column-gap: 5px;
+	align-items: center;
+}
+
+/* .credentials div label,
+.topics label {
+	font-size: 16px;
+} */
+
+.credentials div p {
+	font-size: 16px;
+	color: var(--gray-ultra-light);
+}
+
+.topics-list > * {
+	margin: 10px 0;
+}
+
 .btn {
 	align-self: center;
 	background: linear-gradient(180deg, var(--purple-light), var(--purple-dark));

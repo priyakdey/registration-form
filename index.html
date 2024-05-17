@@ -19,6 +19,7 @@
 				<p id="registration-form-step-2-header" class="display-none">
 					Which topics you are interested in?
 				</p>
+				<p id="registration-form-step-3-header" class="display-none">Summary</p>
 				<form method="GET" action="/" class="registration-form">
 					<!-- step 1: name -->
 					<div id="registration-form-input-name" class="input-container">
@@ -63,6 +64,33 @@
 						<input name="graphic-design" type="radio" />
 					</div>
 
+					<!-- Step 3: summary -->
+					<div
+						id="registration-form-summary"
+						class="input-container display-none"
+					>
+						<div class="credentials">
+							<div>
+								<label for="summary-name" class="input-field-label">
+									Name:
+								</label>
+								<p id="summary-name"></p>
+							</div>
+							<div>
+								<label for="summary-email" class="input-field-label">
+									Email:
+								</label>
+								<p id="summary-email"></p>
+							</div>
+						</div>
+						<div class="topics">
+							<label for="summary-email" class="input-field-label">
+								Topics:
+							</label>
+							<ul id="topics-list" class="topics-list"></ul>
+						</div>
+					</div>
+
 					<!-- Step 1 & 2 : Continue -->
 					<div id="continue" class="input-container">
 						<input
@@ -75,12 +103,12 @@
 
 					<!-- Step 3 : Confirm -->
 					<div id="confirm" class="input-container display-none">
-						<input id="confirm-btn" type="submit" class="btn" value="Submit" />
+						<input id="confirm-btn" type="submit" class="btn" value="Confirm" />
 					</div>
 				</form>
 			</div>
 			<div class="step-container">
-				<p id="step count">Step 1 of 3</p>
+				<p id="step-count"></p>
 				<ul id="step-indicator" class="step-indicator">
 					<li id="step-1" class="step current"></li>
 					<li id="step-2" class="step"></li>
